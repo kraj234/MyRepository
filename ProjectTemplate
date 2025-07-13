@@ -1,0 +1,46 @@
+1.Project.Domain.Core - no references
+2.Project.Attributes - no references
+3.Project.DataTranslation.Service.Implementation
+<ItemGroup>
+  <ProjectReference Include="..\Project.Attributes\Project.Attributes.csproj" />
+  <ProjectReference Include="..\Project.DataTranslation.Service.Interfaces\Project.DataTranslation.Service.Interfaces.csproj" />
+  <ProjectReference Include="..\Project.Services.Interfaces\Project.Services.Interfaces.csproj" />
+</ItemGroup>
+4.Project.DataTranslation.Service.Interfaces
+5.Project.Infrastructure.Data 
+<ItemGroup>
+  <ProjectReference Include="..\Project.Attributes\Project.Attributes.csproj" />
+  <ProjectReference Include="..\Project.Domain.Core\Project.Domain.Core.csproj" />
+  <ProjectReference Include="..\Project.Infrastructure.Interfaces\Project.Infrastructure.Interfaces.csproj" />
+  <ProjectReference Include="..\Project.Services.Interfaces\Project.Services.Interfaces.csproj" />
+  <ProjectReference Include="..\Project.Services.Shared\Project.Services.Shared.csproj" />
+</ItemGroup>
+6.Project.Infrastructure.Interfaces
+ <ItemGroup>
+   <ProjectReference Include="..\Project.Domain.Core\Project.Domain.Core.csproj" />
+ </ItemGroup>
+7.Project.Services.Implementation
+<ItemGroup>
+  <ProjectReference Include="..\Project.Attributes\Project.Attributes.csproj" />
+  <ProjectReference Include="..\Project.DataTranslation.Service.Interfaces\Project.DataTranslation.Service.Interfaces.csproj" />
+  <ProjectReference Include="..\Project.Domain.Core\Project.Domain.Core.csproj" />
+  <ProjectReference Include="..\Project.Infrastructure.Data\Project.Infrastructure.Data.csproj" />
+  <ProjectReference Include="..\Project.Services.Interfaces\Project.Services.Interfaces.csproj" />
+</ItemGroup>
+8.Project.Services.Interfaces
+ <ItemGroup>
+   <ProjectReference Include="..\Project.Infrastructure.Interfaces\Project.Infrastructure.Interfaces.csproj" />
+ </ItemGroup>
+9.Project.Services.Shared
+<ItemGroup>
+  <ProjectReference Include="..\Project.Domain.Core\Project.Domain.Core.csproj" />
+  <ProjectReference Include="..\Project.Infrastructure.Interfaces\Project.Infrastructure.Interfaces.csproj" />
+</ItemGroup>
+10.Project.API
+ <ItemGroup>
+   <ProjectReference Include="..\Project.Attributes\Project.Attributes.csproj" />
+   <ProjectReference Include="..\Project.DataTranslation.Service.Implementation\Project.DataTranslation.Service.Implementation.csproj" />
+   <ProjectReference Include="..\Project.Infrastructure.Data\Project.Infrastructure.Data.csproj" />
+   <ProjectReference Include="..\Project.Services.Implementation\Project.Services.Implementation.csproj" />
+   <ProjectReference Include="..\Project.Services.Interfaces\Project.Services.Interfaces.csproj" />
+ </ItemGroup>
